@@ -1,0 +1,53 @@
+:root {
+  font-size: 10px;
+}
+
+/*==============
+===Typography===
+==============*/
+
+/*----- Font Sizes ----*/
+$global-line-height: 1.5 !default;      // 24px
+$fs-3xl: clamp(5.6rem, 6vw, 7rem);      // 56px
+$fs-2xl: clamp(4.2rem, 4.5vw, 5.5rem);  // 42px
+$fs-xl: clamp(3.2rem, 3.5vw, 4rem);     // 32px
+$fs-l: clamp(2.4rem, 2.7vw, 3.2rem);    // 24px
+$fs-m: clamp(2rem, 2.2vw, 2.5rem);      // 20px
+$fs-s: clamp(1.6rem, 1.8vw, 2rem);      // 16px
+$fs-vs: clamp(1.4rem, 1.6vw, 1.8rem);   // 14px
+$fs-vvs: clamp(1.2rem, 1.4vw, 1.6rem);  // 12px
+
+/*---- Font Weight ----*/
+$font-weights: (
+  "regular": 400,
+  "medium": 600,
+  "bold": 700,
+  "bolder": 900,
+);
+@function weight($weight-name) {
+  @return map-get($font-weights, $weight-name);
+}
+
+
+/*==========
+===Colors===
+==========*/
+
+/*---- Background Color ----*/
+$bg-white: #fff;
+$bg-black: #2C2C2C;
+$bg-light-pink: #ff007a;
+$bg-light-gray: #f6f9fe;
+$bg-gradient: linear-gradient(to top, #ff007a 0%, rgba(142, 0, 116, 1) 100%);
+$bg-gradient-2: linear-gradient(to right, rgba(142, 0, 116, 1) 0%, #ff007a 100%);
+$bg-card-shadow: 0 0.188rem 1.25rem 0px rgba(0, 0, 0,0.06);
+$bg-card-shadow: 0 2rem 5rem rgba(0,0,0,0.06);
+$bg-light-gray-1: #eee;
+
+/*---- Text Color ----*/
+$primary-font: "Poppins", sans-serif;
+$text-white: #fff;
+$text-black: #2C2C2C;
+$text-light-black: #444;
+$text-light-pink: #ff007a;
+$text-light-gray: #7e8085;
